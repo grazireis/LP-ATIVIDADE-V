@@ -31,7 +31,7 @@ int main()
         printf("\n");
     printf("-----Selecione sua preferencia-----\t\n");
     printf("   1   | Realizar uma admissão\n");
-    printf("   2   | Consultar Salário\n");
+    printf("   2   | Reajuste Salárial\n");
     printf("   3   | Elaborar promoções\n");
     printf("   4   | Demissões\n");
     printf("   5   | Consultar atualizações\n");
