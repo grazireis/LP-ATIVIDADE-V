@@ -23,67 +23,70 @@ int main()
     int k = 0;
     int l = 0;
 
+    printf("Seja bem Vindo ao RH Success!\n");
+    
     do
     {
 
         printf("\n");
     printf("-----Selecione sua preferencia-----\t\n");
-    printf("   1   | Realizar uma admiss„o\n");
-    printf("   2   | Consultar Sal·rio\n");
-    printf("   3   | Elaborar promoÁıes\n");
-    printf("   4   | Demissıes\n");
-    printf("   5   | Consultar atualizaÁıes\n");
+    printf("   1   | Realizar uma admiss√£o\n");
+    printf("   2   | Consultar Sal√°rio\n");
+    printf("   3   | Elaborar promo√ß√µes\n");
+    printf("   4   | Demiss√µes\n");
+    printf("   5   | Consultar atualiza√ß√µes\n");
     printf("   6   | Sair do programa\n");
     printf("-------------------------------\t\n");
         printf("\n");
 
-        printf("Escolha uma opÁ„o: ");
+        printf("Escolha uma op√ß√£o: ");
         scanf("%d", &opcao);
         printf("\n");
-
+        system("cls||clear");
+        
         switch (opcao)
         {
         case 1:
             printf("Digite o nome do novo contratado: ");
             scanf("%s", &admissao);
-            printf("Tipo de contrataÁıes:\n");
+            printf("Tipo de contrata√ß√µes:\n");
             scanf("%s", &contratacao);
-            printf("Informe seu endereÁo:\n");
+            printf("Informe seu endere√ßo:\n");
             scanf("%s", &endereco);
-            printf("informe o n˙mero de telefone:\n");
+            printf("informe o n√∫mero de telefone:\n");
             scanf("%s", &telefone);
             printf("\n");
-            printf("Carregando admiss„o...\n");
+            printf("Carregando admiss√£o...\n");
 
             i++;
 
             break;
         case 2:
-            printf("Em qual funcion·rio ser· feito o reajuste?: ");
+            printf("Em qual funcion√°rio ser√° feito o reajuste?: ");
             scanf("%s", &nomesalario);
-            printf("Qual È o salario atual de %s?:", nomesalario);
+            printf("Qual √© o salario atual de %s?:", nomesalario);
             scanf("%s", &salarioatual);
-            printf("Em quanto ficar· o sal·rio de %s?: ", nomesalario);
+            printf("Em quanto ficar√° o sal√°rio de %s?: ", nomesalario);
             scanf("%s", &salarionovo);
             printf("\n");
-            printf("O sal·rio de %s mudou de %s para %s \n", nomesalario, salarioatual, salarionovo);
+            printf("O sal√°rio de %s mudou de %s para %s \n", nomesalario, salarioatual, salarionovo);
 
             j++;
 
             break;
         case 3:
-            printf("Qual funcion·rio ser· promovido?:\n");
+            printf("Qual funcion√°rio ser√° promovido?:\n");
             scanf("%s", &nomepromovido);
-            printf("Qual ser· o futuro cargo de %s:\n", nomepromovido);
+            printf("Qual ser√° o futuro cargo de %s:\n", nomepromovido);
             scanf("%s", &cargopromovido);
             printf("\n");
-            printf("O funcion·rio %s agora È %s \n", nomepromovido, cargopromovido);
+            printf("O funcion√°rio %s agora √© %s \n", nomepromovido, cargopromovido);
 
             k++;
 
             break;
         case 4:
-            printf("Digite o nome do funcion·rio a ser demitido: ");
+            printf("Digite o nome do funcion√°rio a ser demitido: ");
             scanf("%s", &demissao);
             printf("\n");
             printf("Enviando aviso...\n");
@@ -92,11 +95,11 @@ int main()
 
             break;
         case 5:
-            printf("- AtualizaÁıes: \n");
-            printf("ContrataÁıes: %d\n", i);
+            printf("- Atualiza√ß√µes: \n");
+            printf("Contrata√ß√µes: %d\n", i);
             printf("Ajuste salarial: %d \n", j);
-            printf("PromoÁıes: %d \n", k);
-            printf("Demissıes: %d \n", l);
+            printf("Promo√ß√µes: %d \n", k);
+            printf("Demiss√µes: %d \n", l);
             printf("\n");
 
             break;
